@@ -1,0 +1,46 @@
+<!-- 
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>iuz</title>
+    </head>
+    <body>
+      <div>777</div>
+      <% if(done) {%>
+        <% users.forEach((user)=>{%>
+          <img
+          src="http://localhost:5000/<%= user.avatar %>"
+          alt="<%= user.username %>"
+          width="100px"
+        />
+        <%});%> 
+                      <h4>Check your <a href="/user/view/<%= user.username %>">profile</a></h4>
+                      <a href="/logout">Logout</a>
+                      <%}%> 
+
+  <% else {%>
+
+  <form method="POST" action="/login">
+    <label for="username">
+      <input type="text" name="username" id="username" placeholder="Username" />
+    </label>
+    <label for="password">
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+    </label>
+
+    <label for="submit">
+      <input type="submit" value="Login" />
+    </label>
+  </form>
+  Or
+  <a href="/">Register</a>
+  <%}%> -->
+  
+<!-- 
+    </body>
+    </html> --> 

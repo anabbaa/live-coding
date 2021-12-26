@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Listener</title>
+  </head>
+  <body>
+    <h1>Hey, this is me 😎</h1>
+    <input type="text" id="userInput" />
+    <button onclick="print()">Print Info</button>
+    <button id="more">More Info</button>
+    <div class="text"></div>
+    <script >
+const reset = ()=>{
+  header.style.color= "orange";
+}
+const changeBg = ()=>{
+  header.style.color = "yellow";
+}
+const header = document.querySelector("h1");
+header.addEventListener("mouseenter", changeBg);
+header.addEventListener("mouseleave", reset);
+
+
+
+function keyUp (e){
+  this.style.backgroundColor = "blue";
+}
+function keyDown (e){
+  this.style.backgroundColor = "black";
+
+function keyPress (e){
+  this.style.backgroundColor = "red";
+}
+
+
+
+
+const userInput = document.querySelector("#userInput");
+userInput.addEventListener("keyup", keyUp); 
+userInput.addEventListener("keydown", keyDown); 
+userInput.addEventListener("keypress", keyPress); 
+
+
+    
+    
+    
+    </script>
+  </body>
+</html>
+
+

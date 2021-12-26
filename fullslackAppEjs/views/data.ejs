@@ -1,0 +1,47 @@
+<!-- 
+
+          <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <% if(data){%>
+
+    <div>
+        <table border="1">
+          <tr>
+            <td>ID</td>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Avatar</th>
+          </tr>
+    
+    <% users.forEach((uaer)=>{%>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.username %></td>
+        <td><%= user.password %></td>
+        <td><%= user.role %></td>
+        <td><img
+            src="<%= user.avbatar %>"
+            alt="<%= user.username %>"
+            width="100px"
+          /></td>
+      </tr>
+      <%});%>
+           
+      <%}%>
+      <%}%>
+
+        </table>
+        <a href="/">Go back</a>
+    
+              </div>
+              <% else {%>
+  <h4>Sorry something went wrong</h4>
+  <a href="/">Go back</a>
+  <%}%>
+  </body>
+  </html> -->

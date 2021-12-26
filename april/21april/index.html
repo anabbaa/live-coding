@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- Your elements goes here -->
+
+
+    <div>
+      <p id="main">This is cool 🤓</p>
+      <input type="button" value="Read more" onclick="change()" />
+    </div>
+    <hr />
+    <select name="number" id="num1" class="select-num">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+    <select name="number1" id="math" >
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    </select>
+
+    <select name="num2" id="num2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select>
+
+    <button onclick="multiply()">Calculate</button>
+    <div class="result"></div>
+
+   
+
+  
+  </body>
+  <script>
+
+    function multiply (){
+        let resulttext = 0;
+        let num1 = document.querySelector("#num1").value;
+  let num2 = document.querySelector("#num2").value;
+  let math = document.querySelector("#math").value;
+    
+
+
+      
+switch (math){
+  case "+":
+  resulttext = parseInt(num1) + parseInt(num2);
+  break;
+  case "-":
+    resulttext = parseInt(num1) - parseInt(num2);
+    break;
+    case "*":
+      resulttext = parseInt(nu1m) * parseInt(num2);
+      break;
+      case "/":
+        resulttext = parseInt(num1) / parseInt(num2);
+        break;
+}
+document.querySelector(".result").innerHTML = resulttext;
+    }
+    
+        </script>
+  
+</html>
